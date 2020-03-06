@@ -1,0 +1,770 @@
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.BASE CSS STYLE
+* 02.MAIN HEADER CCS STYLE
+* 03.HERO AREA CSS STYLE
+* 04.CALL TO ACTION AREA CSS STYLE
+* 05.SERVICE AREA CSS STYLE
+* 06. HOME SERVICE AREA CSS STYLE
+* 07.FOOTER AREA CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*========================================================================================
+==================================  Base CSS ======================================
+==========================================================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,700,700i');
+a:focus,
+input:focus,
+button:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.66;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.minus-margin-TB30{
+	margin-top: -30px;
+	margin-bottom: -30px;
+}
+.section-padding{
+	padding:100px 0;
+}
+.section-title {
+    line-height: 1.75;
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 60px;
+}
+.section-title h2 {
+    color: #252525;
+    margin-bottom: 20px;
+}
+.section-title.style-2,.section-title.style-2 h2 {
+    color: #fff;
+}
+/*Default Button style*/
+.boxed-btn,
+.border-btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    display: inline-block;
+    padding: 13px 40px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.boxed-btn {
+
+    background: #7f8a90;
+}
+
+.border-btn {
+    display: inline-block;
+    border: 1px solid #fff;
+}
+
+.boxed-btn:hover {
+    color: #7f8a90;
+    background: #fff;
+}
+
+.boxed-btn.style-2:hover {
+    color: #fff;
+    background: #333;
+}
+
+.border-btn:hover {
+    background: #fff;
+    color: #7f8a90;
+}
+
+
+/*Default Background shape*/
+
+.shape-bg-right,.shape-bg-left {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shape-bg-right:after,.shape-bg-left:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #869995;
+    z-index: -1;
+    top: 0;
+    position: absolute;
+
+}
+.shape-bg-right:after{
+    right: 0;	
+}
+.shape-bg-left:after {
+    left: 0;
+}
+
+/*========================================================================================
+==================================  Main Header CSS ======================================
+==========================================================================================*/
+
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 22;
+    padding: 25px;
+}
+
+.logo {
+    max-height: 82px;
+}
+
+.search-form {
+    position: relative;
+    padding: 22px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.search-form.menu-open {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+.search-form input,
+.search-form button {
+    background: transparent;
+    border: navajowhite;
+    color: #605f5f;
+    font-size: 18px;
+}
+
+.search-form input {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 4px 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.search-form input:focus {
+
+    border: 1px solid #605f5f;
+}
+
+.search-form button {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    color: #fff;
+}
+
+
+
+.menu-wraper {
+    position: absolute;
+    height: auto;
+    right: 0;
+    padding: 20px;
+    top: 95px;
+    overflow: hidden;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 200%;
+    background: #181818;
+}
+.menu-wraper.open {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+.menu-wraper ul {
+    padding: 0;
+    margin: 0;
+    list-style:  none;
+}
+
+
+.menu-wraper ul li a {
+    display: block;
+    padding: 10px;
+    color: #7f8a90;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.menu-wraper ul li a:hover {
+    color: #fff;
+}
+.menu-trigger {
+    color: #7f8a90;
+    font-size: 25px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding: 21px 0;
+    display: inline-block;
+}
+
+.menu-trigger:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/*========================================================================================
+==================================  Hero area CSS ======================================
+==========================================================================================*/
+
+.hero-area {
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fdfeff;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.hero-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #000;
+    z-index: -1;
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+
+.social-links {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    text-align: center;
+    font-size: 18px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 22;
+    line-height: 2;
+}
+
+.social-links a {
+    display: block;
+    color: #838d93;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.slide-text {
+    font-size: 12px;
+    padding-top: 130px;
+    padding-left: 20px;
+}
+.slide-text h1 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+
+
+
+.slide-text .boxed-btn {
+    margin-top: 20px;
+    box-shadow: 0 0 9px 3px #00000073;
+}
+
+.slide-right-img {
+    position: absolute;
+    right: 10px;
+    width: calc(58% - 10px);
+    top: calc(50% + 65px);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: none;
+}
+.slide-img-inner{
+	position: relative;
+	display: inline-block;
+}
+.slide-img-inner img{
+    max-width: 750px;
+}
+.play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    font-size: 70px;
+    z-index: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    color: red;
+}
+
+.play-btn:after {
+    content: "";
+    background: #576061;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+}
+
+.play-btn:hover:after {
+    background: #fff;
+}
+
+
+
+/*========================================================================================
+==================================  CTA area CSS ======================================
+==========================================================================================*/
+
+.cta-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+.cta-area h2 {
+    margin-bottom: 20px;
+}
+
+.cta-area h2 i {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.cta-area .border-btn {
+    margin-top: 20px;
+}
+
+
+
+/*========================================================================================
+==================================  Service area CSS ======================================
+==========================================================================================*/
+
+.single-service-item {
+    text-align: center;
+    padding: 0 45px;
+    margin: 30px 0;
+    position: relative;
+    color: #888888;
+}
+
+
+
+
+.service-icon {
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+    width: 80px;
+    height: 138.5px;
+    border-radius: 1em/.5em;
+    background: #869995;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-top: 7px;
+}
+
+.service-icon:before,
+.service-icon:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.service-icon:before {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.service-icon:after {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.service-icon-inner {
+    display: table;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+}
+
+.display-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.single-service-item h4 {
+    font-size: 25px;
+    color: #252525;
+    margin-bottom: 20px;
+}
+
+.service-hover-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #333333;
+    font-size: 18px;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.service-hover-details strong {
+    font-weight: 600;
+}
+
+.service-hover-details .boxed-btn {
+    margin-top: 30px;
+}
+
+.service-hover-details .boxed-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.single-service-item:hover .service-hover-details {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+
+
+
+/*========================================================================================
+==================================  Home Service area CSS ======================================
+==========================================================================================*/
+
+
+.single-home-service {
+    padding: 25px;
+    border: 1px solid #aab2b0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+.home-service-icon {
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin-bottom: 35px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.home-service-icon.icon-1{
+    background-image: url(../img/home-service/light-normal.png);
+}
+.home-service-icon.icon-2{
+    background-image: url(../img/home-service/ac-normal.png);
+}
+.home-service-icon.icon-3{
+    background-image: url(../img/home-service/shade-normal.png);
+}
+.home-service-icon.icon-4{
+    background-image: url(../img/home-service/security-normal.png);
+}
+
+.single-home-service:hover .home-service-icon.icon-1{
+    background-image: url(../img/home-service/light.png);
+}
+.single-home-service:hover .home-service-icon.icon-2{
+    background-image: url(../img/home-service/ac.png);
+}
+.single-home-service:hover .home-service-icon.icon-3{
+    background-image: url(../img/home-service/shade.png);
+}
+.single-home-service:hover .home-service-icon.icon-4{
+    background-image: url(../img/home-service/security.png);
+}
+.single-home-service {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 60px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.single-home-service h4 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.single-home-service:hover {
+    background: #fff;
+    box-shadow: 0 4px 43px 3px #0000002b;
+    border-color: #fff;
+}
+
+.single-home-service:hover h4 {
+    color: #252525;
+}
+
+
+
+
+
+
+
+/*========================================================================================
+==================================  Home Service area CSS ======================================
+==========================================================================================*/
+
+.business-service-icon {
+ background-image: url(../img/pentagon.png);
+ background-size: cover;
+ background-position: center;
+
+    width: 77px;
+    height: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.business-service-icon i {
+    padding-top: 5px;
+}
+
+.single-business-service h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #252525;
+}
+
+.single-business-service {
+    padding: 0 20px;
+    color: #7e898f;
+    margin-bottom: 40px;
+}
+
+
+
+/*========================================================================================
+==================================  Footer area CSS ======================================
+==========================================================================================*/
+.main-footer {
+    background: #f6f7f7;
+}
+
+.footer-top {
+    padding: 100px 0;
+}
+.footer-top-item {
+    margin: 30px 0;
+}
+.footer-top-item h5 {
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.social-links-footer a {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.footer-top ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2;
+}
+
+.main-footer,.main-footer a {
+    color: #7f8a90;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+.main-footer a:hover {
+    color: #333;
+}
+
+.contact-details strong {
+    color: #555555;
+    font-weight: 400;
+    padding-right: 4px;
+}
+.footer-links a i {
+    padding-right: 5px;
+}
+
+.footer-links a {
+    font-weight: 400;
+}
+.subscribe-form {
+    overflow: hidden;
+}
+
+.subscribe-form input,.subscribe-form button {
+    float: left;
+}
+
+.subscribe-form input {
+    width: 80%;
+    border: 1px solid #dee1e2;
+    background: transparent;
+    padding: 10px 18px;
+}
+
+.subscribe-form button {
+    width: 20%;
+    background: #7f8a90;
+    border: 1px solid #7f8a90;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor:  pointer;
+}
+
+.subscribe-form button:hover {
+    background: #333;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ebeded;
+    padding: 30px;
+    font-size: 13px;
+}

@@ -1,0 +1,193 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+
+
+/*No media query since this is the default in Bootstrap*/
+
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    .social-links {
+        left: 15px;
+    }
+    .slide-text {
+        font-size: 18px;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    .menu-wraper {
+        height: 100%;
+        right: 50px;
+        padding: 19px 0;
+        top: 0;
+        background: transparent;
+    }
+    .menu-wraper ul li {
+        display: inline-block;
+    }
+
+    .social-links {
+        left: 30px;
+    }
+    .hero-area {
+        min-height: 600px;
+    }
+    .slide-text {
+        font-size: 18px;
+    }
+    .slide-text h1 {
+        font-size: 47px;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+
+
+/*Only for Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-wraper {
+        width: 300%;
+    }
+    .single-business-service {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    .section-padding {
+        padding: 130px 0;
+    }
+    .section-title {
+        margin-bottom: 100px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    .shape-bg-right::after,
+    .shape-bg-left::after {
+        width: 95%;
+        height: 81%;
+        top: 38px;
+    }
+    .shape-bg-right::after {
+        right: -7%;
+        border-radius: 40px 0 0 130px;
+        transform: skewX(-23deg) rotate(-5deg);
+    }
+    .shape-bg-left::after {
+        width: 106%;
+        left: -13%;
+        border-radius: 0 60px 90px 0;
+        transform: skewX(-15deg) rotate(5deg);
+        top: 59px;
+    }
+    .hero-area {
+        height: 100%;
+        min-height: 700px;
+    }
+
+    .slide-right-img {
+        display: block;
+    }
+    .slide-text .boxed-btn {
+        margin-top: 40px;
+    }
+    .cta-area h2 i {
+        padding-right: 40px;
+    }
+
+    .cta-area {
+        padding-top: 200px;
+        padding-bottom: 150px;
+        font-size: 18px;
+    }
+
+
+
+
+    .cta-area h2 {
+        margin-bottom: 30px;
+    }
+
+    .cta-area h2 i {
+        padding-right: 10px;
+    }
+
+    .cta-area .border-btn {
+        margin-top: 40px;
+    }
+
+
+    .main-footer {
+        border-radius: 25% 25% 0 0;
+    }
+
+    .footer-top {
+        padding: 140px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {
+    .shape-bg-right::after,
+    .shape-bg-left::after {
+        top: 43px;
+    }
+    .shape-bg-left::after {
+        top: 71px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .shape-bg-right::after,
+    .shape-bg-left::after {
+        top: 52px;
+        height: 79%;
+    }
+    .shape-bg-left::after {
+        top: 71px;
+    }
+}
